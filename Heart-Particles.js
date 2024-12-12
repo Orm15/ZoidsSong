@@ -44,13 +44,13 @@ while (l--) {
 d.fillStyle = "rgba(0, 0, 0, 255)";
 // Ajuste del tamaño de fuente según el dispositivo
 if (/Mobi|Android/i.test(navigator.userAgent)) {
-    d.font = w * 0.6 - h * 0.2 + "px sans-serif"; // Tamaño original para dispositivos móviles
+    d.font = w * 0.9 - h * 0.2 + "px sans-serif"; // Tamaño original para dispositivos móviles
 } else {
-    d.font = w * 0.2 - h * 0.1 + "px sans-serif"; // Tamaño reducido para dispositivos no móviles
+    d.font = w * 0.5 - h * 0.1 + "px sans-serif"; // Tamaño reducido para dispositivos no móviles
 }
 d.textAlign = "center";
 d.textBaseline = "middle";
-d.fillText('VALERIA', w / 2, h / 2);
+d.fillText('♥', w / 2, h / 2);
 
 var heartPixelData = d.getImageData(0, 0, w, h).data;
 d.fillStyle = "rgba(0, 0, 0, 1)";
